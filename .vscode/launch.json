@@ -9,19 +9,15 @@
         }
     ],
     "configurations": [
-        
-
-
-
-
-
-
-
         {
             "name": "Run: Go Current File",
-            "type": "node-terminal",
+            "type": "go",
             "request": "launch",
-            "command": "go run \"${file}\" ${input:programArguments}"
+            "mode": "auto",
+            "program": "${file}",
+            "args": [
+                "${input:programArguments}"
+            ]
         },
         {
             "name": "Run: Python Current File",
