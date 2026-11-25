@@ -1,0 +1,54 @@
+{
+    "version": "0.2.0",
+    "inputs": [
+        {
+            "id": "programArguments",
+            "type": "promptString",
+            "description": "Arguments to pass to the current file",
+            "default": ""
+        }
+    ],
+    "configurations": [
+        {
+            "name": "Run: Go Current File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "go run \"${file}\" ${input:programArguments}"
+        },
+        {
+            "name": "Run: Python Current File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "python \"${file}\" ${input:programArguments}"
+        },
+        {
+            "name": "Run: PowerShell Current File",
+            "type": "node-terminal",
+            "request": "launch",
+            "command": "powershell -NoLogo -NoProfile -ExecutionPolicy Bypass -File \"${file}\" ${input:programArguments}"
+        },
+        {
+            "name": "Debug: JavaScript Current File",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
+        {
+            "name": "Debug: JavaScript Current File with Arguments",
+            "type": "node",
+            "request": "launch",
+            "program": "${file}",
+            "args": "${input:programArguments}",
+            "cwd": "${fileDirname}",
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        }
+    ]
+}

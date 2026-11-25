@@ -1,0 +1,13 @@
+{
+    "editor.autoClosingQuotes": "always",
+    "editor.autoClosingOvertype": "always",
+    "editor.autoClosingDelete": "always",
+    "editor.autoIndent": "full",
+    "editor.find.closeOnResult": true,
+    "editor.find.autoFindInSelection": "always",
+    "editor.fontLigatures": false,
+    "editor.fontVariations": false,
+    "editor.fontWeight": "normal",
+    "workbench.commandPalette.preserveInput": true,
+    "workbench.accounts.showAvatar": true
+}
