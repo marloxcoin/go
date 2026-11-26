@@ -1,15 +1,4 @@
 
-      "request": "launch",
-      "mode": "auto",
-      "program": "${file}",
-      "args": [
-        "${input:programArguments}"
-      ]
-    },
-    {
-      "name": "Run: Python Current File",
-      "type": "node-terminal",
-      "request": "launch",
       "command": "python \"${file}\" ${input:programArguments}"
     },
     {
