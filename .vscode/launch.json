@@ -1,22 +1,4 @@
-{
-  "version": "0.2.0",
-  "inputs": [
-    {
-      "id": "programArguments",
-      "type": "promptString",
-      "description": "Arguments to pass to the current file",
-      "default": ""
-    }
-  ],
-  "configurations": [
-    {
-      "name": ".NET Core Attach",
-      "type": "coreclr",
-      "request": "attach"
-    },
-    {
-      "name": "Run: Go Current File",
-      "type": "go",
+
       "request": "launch",
       "mode": "auto",
       "program": "${file}",
